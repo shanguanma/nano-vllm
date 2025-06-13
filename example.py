@@ -3,7 +3,7 @@ from nanovllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 
 
-path = os.path.expanduser("~/huggingface/Qwen3-0.6B/")
+path = os.path.expanduser("/data/maduo/model_hub/llm/Qwen3-0.6B")
 tokenizer = AutoTokenizer.from_pretrained(path)
 llm = LLM(path, enforce_eager=True)
 
